@@ -27,7 +27,9 @@ BINNED_HM_SST_Bucket_yr_start_1850_deck_level_1_eq_wt.mat
 
 See below for file structures:
 
-![new-repository-button](/Figures/File_structure.png)
+<p align="center">
+<img src="/Figures/File_structure.png" alt="drawing" width="400px"/>
+</p>
 
 __IMPORTANT__: Code refers to __HM_Homo_compact__. Also, please run ```addpath(genpath(pwd))```
 or ```addpath(genpath(dir_code))``` to make sure that matlab can find the scripts, where dir_code is the absolute directory of __HM_Homo_compact__.

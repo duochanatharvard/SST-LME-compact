@@ -97,7 +97,7 @@ Pooled pairs -- HM_lme_bin.m --> Aggregate pairs -- HM_lme_fit.m --> Offsets est
 
 Fig. __4__, Offsets for national analysis assuming independent and identically distributed (i.i.d.) pairs.
 
-![new-repository-button](Figures/Method/20180725_Fixed_Yearly_Effects_case_1.png)
+![new-repository-button](Figures/20180725_Fixed_Yearly_Effects_case_1.png)
 
 run ```HM_figure_Bias_fixed_and_yearly(1)```. Here, ```case_id``` is 1, which means to use case of i.i.d. pairs. Change this to 2 to plot for the case accounting for heterogenous SST variance and correlated pairs.
 
@@ -105,7 +105,7 @@ run ```HM_figure_Bias_fixed_and_yearly(1)```. Here, ```case_id``` is 1, which me
 
 Fig. __6__, Pair-wise significance test assuming i.i.d. pairs.
 
-![new-repository-button](Figures/Method/20180708_Significant_test_Global_start_1850_case_1.png)
+![new-repository-button](Figures/20180708_Significant_test_Global_start_1850_case_1.png)
 
 run ```HM_figure_pair_wise_sig_and_time_series(0,1)```. Two arguments are do_NpD, and case_id. When do_NpD equals to 0, means nation-level analysis, else are deck-level analysis.
 
@@ -113,8 +113,8 @@ run ```HM_figure_pair_wise_sig_and_time_series(0,1)```. Two arguments are do_NpD
 
 Fig. __8__ and __9__, Deck-level pair-wise significant tests, and offsets of individual decks assuming i.i.d. pairs.
 
-![new-repository-button](Figures/Method/20180708_SUM_sig_case_1.png)
-![new-repository-button](Figures/Method/20180708_SUM_time_series1.png)
+![new-repository-button](Figures/20180725_SUM_sig_case_1.png)
+![new-repository-button](Figures/20180725_SUM_time_series1.png)
 
 run ```HM_figure_pair_wise_sig_and_time_series(1,1)```.  
 
@@ -122,8 +122,20 @@ run ```HM_figure_pair_wise_sig_and_time_series(1,1)```.
 
 Fig. __13__, Comparison of results for sensitivity test.
 
-![new-repository-button](Figures/Method/FigAA_Compare_ship_level_0.png)
+![new-repository-button](Figures/FigAA_Compare_ship_level_0.png)
 
-Change case_id in ```HM_figure_compare_effects.m``` and run that script.
+Change case_id in ```HM_figure_compare_effects.m``` and run that script.  Please place the following files from the ```Data``` to the ```Miscellaneous``` folder.
+
+```
+Stats_HM_SST_Bucket_Glb_deck_level_0.mat
+Stats_HM_SST_Bucket_Glb_deck_level_1.mat
+```
 
 ---
+
+Maintained by: __Duo Chan__ (duochan@g.harvard.edu)
+
+Earth and Planetary Sciences,
+Harvard University
+
+Last Update: 2018-08-23

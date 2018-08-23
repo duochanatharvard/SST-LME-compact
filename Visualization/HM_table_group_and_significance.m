@@ -11,7 +11,6 @@ function output = HM_table_group_and_significance(case_id)
         yr_start = 1850;
         env = 0;
         alpha   = 0.10;
-        % case_id = 1;
     end
 
     % *******************************************************

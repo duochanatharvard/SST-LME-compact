@@ -8,10 +8,8 @@ function output = HM_figure_pair_wise_sig_and_time_series(do_NpD,case_id)
         varname = 'SST';
         method = 'Bucket';
         yr_start = 1850;
-        env = 0;
+        env = 1;
         alpha  = 0.1;
-        case_id = 1;
-        do_NpD = 1;
     end
 
     date_mark = '20180725';

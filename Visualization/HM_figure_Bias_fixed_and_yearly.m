@@ -9,7 +9,7 @@ function output = HM_figure_Bias_fixed_and_yearly(case_id,do_science)
         varname = 'SST';
         method = 'Bucket';
         yr_start = 1850;
-        env = 0;
+        env = 1;
         alpha    = 0.1;
 
         if do_science == 0, % parameters for method paper
@@ -168,7 +168,7 @@ function output = HM_figure_Bias_fixed_and_yearly(case_id,do_science)
             set(gcf,'position',[1 12 12 13],'unit','inches');
             set(gcf,'position',[1 12 12 13],'unit','inches');
             dir_save = HM_OI('save_figure_method');
-            % CDF_save(1,'png',300,[dir_save,'20180725_Fixed_Yearly_Effects_case_',num2str(case_id),'.png'])
+            CDF_save(1,'png',300,[dir_save,'20180725_Fixed_Yearly_Effects_case_',num2str(case_id),'.png'])
         else
             set(gcf,'position',[0 0 14 13],'unit','inches');
             set(gcf,'position',[0 0 17 11],'unit','inches');

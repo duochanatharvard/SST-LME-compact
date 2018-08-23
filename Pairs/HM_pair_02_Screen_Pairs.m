@@ -8,10 +8,7 @@ function HM_pair_02_Screen_Pairs(yr,mon,mode,varname,method,env)
         env = 1;            % 1 means on odyssey
     end
     dir_home = HM_OI('home',env);
-    addpath('/n/home10/dchan/Matlab_Tool_Box/');
-    addpath('/n/home10/dchan/m_map/');
-    addpath('/n/home10/dchan/script/Peter/ICOAD_RE/function/');
-    addpath('/n/home10/dchan/script/Peter/Hvd_SST/Homo/');
+
 
     app = ['HM_',varname,'_',method];
     if app(end)=='_', app(end)=[]; end

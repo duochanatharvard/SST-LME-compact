@@ -7,10 +7,6 @@ function HM_pair_01_Raw_Pairs(yr_list,mon_list,mode,varname,method,env)
         env = 1;             % 1 means on odyssey
     end
     dir_home = HM_OI('home',env);
-    addpath('/n/home10/dchan/Matlab_Tool_Box/');
-    addpath('/n/home10/dchan/m_map/');
-    addpath('/n/home10/dchan/script/Peter/ICOAD_RE/function/');
-    addpath('/n/home10/dchan/script/Peter/Hvd_SST/Homo/');
 
     app = ['HM_',varname,'_',method];
     if app(end)=='_', app(end)=[]; end
@@ -117,11 +113,10 @@ function HM_pair_01_Raw_Pairs(yr_list,mon_list,mode,varname,method,env)
                     end
 
                     if mode == 1,
-                        [Pairs,Meta] = re_function_general_get_pairs(DATA,Markers,8,9,6,5,[],300,3,48,mode);
+                        [Pairs,Meta] = HM_function_get_pairs(DATA,Markers,8,9,6,5,[],300,3,48,mode);
                     else
-                        [Pairs,Meta] = re_function_general_get_pairs(DATA,Markers,8,9,6,5,[],3,3,48,mode);
+                        [Pairs,Meta] = HM_function_get_pairs(DATA,Markers,8,9,6,5,[],3,3,48,mode);
                     end
-                    % re_function_general_get_pairs(in_var,index,lon_index,lat_index,time_index,reso_s,reso_t,c_lim,y_lim,t_lim)
 
                     if ~isempty(Pairs),
                         disp('Saving data')

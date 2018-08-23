@@ -1,14 +1,12 @@
 %% A script that run LME model for intercomparison
 
-addpath('/n/home10/dchan/m_map/');
-
 % **************************
 % Customizable Parameters **
 % **************************
-do_correct = 1;     % 0: i.i.d pairs   1: hetero SST variance and correlated pairs
-do_NpD     = 0;     % 0: nation-level  1: deck-level hierarchical model
+do_correct = 0;     % 0: i.i.d pairs   1: hetero SST variance and correlated pairs
+do_NpD     = 1;     % 0: nation-level  1: deck-level hierarchical model
 N_sample   = 10000; % number of random samples for significant test
-do_fast    = 1;     % 1: skip binning and compute LME from binned file
+do_fast    = 0;     % 1: skip binning and compute LME from binned file
 
 % *******************
 % Fixed Parameters **

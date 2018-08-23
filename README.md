@@ -65,8 +65,7 @@ __Note__: You may also need ```m_map``` toolbox to reproduce figures.  You can g
 
   ```HM_Step_02_SUM_Pairs.m``` sums screened pairs and save all pairs into one single mat file.
 
-    To skip this step, please download the pooled pairs from  [__here__](https://github.com/duochanatharvard/ICOADS_preprocess) and place it in
-```/Hvd_SST/HM_SST_Bucket/```
+    To skip this step, please download the pooled pairs from [__here__](https://github.com/duochanatharvard/ICOADS_preprocess) and place it in ```/Hvd_SST/HM_SST_Bucket/```
 
 ----
 

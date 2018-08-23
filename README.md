@@ -48,7 +48,8 @@ __Note__: You may also need ```m_map``` toolbox to reproduce figures.  You can g
 
 1. __Preprocessing__: Full analyses start from pre-processing ICOADS data from IMMA format to mat files and perform quality controls. Details of these steps can be found in [__ ICOADS_preprocess__](https://github.com/duochanatharvard/ICOADS_preprocess) project.
 
-  To skip this step, please download the preprocessed data from  [__here__](https://github.com/duochanatharvard/ICOADS_preprocess).
+<!--- To skip this step, please download the preprocessed data from  [__here__](https://github.com/duochanatharvard/ICOADS_preprocess).
+--->
 
 ---
 
@@ -67,7 +68,9 @@ __Note__: You may also need ```m_map``` toolbox to reproduce figures.  You can g
 
   ```HM_Step_02_SUM_Pairs.m``` sums screened pairs and save all pairs into one single mat file.
 
+<!---
   To skip this step, please download the pooled pairs from [__here__](https://github.com/duochanatharvard/ICOADS_preprocess) and place it in "/Hvd_SST/HM_SST_Bucket/".
+  --->
 
 ----
 
@@ -82,7 +85,7 @@ Pooled pairs -- HM_lme_bin.m --> Aggregate pairs -- HM_lme_fit.m --> Offsets est
 
   Users can choose from two different error models in the fitting, one assuming independent and identically distributed pairs, and the other taking into account spatially heterogeneous SST variance and correlations between pairs. This can be tuned by parameter __do_correct__. To compute with the latter model, it requires statistics of SST based on OI-SST, which will be used by ```HM_lme_var_clim.m``` to compute for SST variances. Please download the file from [__here__](https://github.com/duochanatharvard/ICOADS_preprocess) and move it to the ```Miscellaneous``` folder.
 
-  __SST_Homo_compact__ provides an option for users to quickly reproduce the LME results without preprocessing ICOADS data and pairing adjacent records. To use this function, you can skip step 1 to 2 in the next section and directly run the 3rd step with parameter __do_fast__ equals to 1 and copy the following binned files from ```Data``` folder to ```/Hvd_SST/HM_SST_Bucket/Step_04_run/```.
+  Again, __SST_Homo_compact__ provides an option for users to quickly reproduce the LME results without preprocessing ICOADS data and pairing adjacent records. To use this function, you can skip step 1 to 2 in the next section and directly run the 3rd step with parameter __do_fast__ equals to 1 and copy the following binned files from ```Data``` folder to ```/Hvd_SST/HM_SST_Bucket/Step_04_run/```.
 
   ````
   BINNED_HM_SST_Bucket_yr_start_1850_deck_level_0_cor_err.mat

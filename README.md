@@ -29,11 +29,16 @@ See below for file structures:
 
 ![new-repository-button](/Figures/File_structure.png)
 
+__IMPORTANT__: Code refers to __HM_Homo_compact__. Also, please run ```addpath(genpath(pwd))```
+or ```addpath(genpath(dir_code))``` to make sure that matlab can find the scripts, where dir_code is the absolute directory of __HM_Homo_compact__.
 
 __IMPORTANT__: Please set up directories in ```HM_OI.m``` and make sure that all the directories exist before running any analyses. Also, please refer to the above figure for the data structure that I use.
 
-__IMPORTANT__: You may also need ```colormap_CD``` toolbox to reproduce figures. ```colormap_CD``` is a series of scripts that generate harmonic and distinguishable colormaps for Matlab, developed by Duo Chan. You can get the toolbox
+__IMPORTANT__: You may need ```colormap_CD``` toolbox to reproduce figures. ```colormap_CD``` is a series of scripts that generate harmonic and distinguishable colormaps for Matlab, developed by Duo Chan. You can get the toolbox
 [__here__](https://github.com/duochanatharvard/colormap_CD).
+
+__Note__: You may also need ```m_map``` toolbox to reproduce figures.  You can get the toolbox
+[__here__](https://www.eoas.ubc.ca/~rich/map.html).
 
 
 ----
@@ -45,7 +50,7 @@ __IMPORTANT__: You may also need ```colormap_CD``` toolbox to reproduce figures.
 
 ---
 
-2. __Pairing__: ```HM_Step_01_Run_Pairs.m``` and ```HM_Step_02_SUM_Pairs.m``` pick out pairs that are 300km in distance and 2 days in time.
+2. __Pairing__: run ```HM_Step_01_Run_Pairs.m``` and ```HM_Step_02_SUM_Pairs.m```, which pick out pairs that are 300km in distance and 2 days in time.
 
   ```HM_Step_01_Run_Pairs.m``` first calls ```HM_pair_01_Raw_Pairs.m``` in ```Pair``` folder that pairs records whenever the displacement criteria is met.
 

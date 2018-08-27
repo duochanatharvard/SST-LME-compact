@@ -1,4 +1,4 @@
-# __SST_Homo_compact__
+# __SST_LME_compact__
 Inter-comparison of collocated ICOADS pairs using linear mixed effect model.
 This package contains the core scripts and functions used in paper:
 
@@ -6,7 +6,7 @@ __Chan and Huybers__ (2019), Systematic differences in bucket sea surface temper
 
 
 ----
-__SST_Homo_compact__ has several parts:
+__SST_LME_compact__ has several parts:
 1. __Step__: Main scripts used to call other functions
 2. __Pair__: A toolbox that pairs ICOADS measurements.
 3. __LME__: LME toolbox used to estimate relative biases given pairs of measurements
@@ -16,7 +16,7 @@ __SST_Homo_compact__ has several parts:
 7. __Figures__: Figures used in the papers.
 ----
 
-__SST_Homo_compact__ provides an option for users to quickly reproduce the LME results without preprocessing ICOADS data and pairing adjacent records. To use this function, you can skip step 1 to 2 in the next section and directly run the 3rd step with parameter __do_fast__ equals to 1 and copy the following binned files from ```Data``` folder to ```/Hvd_SST/HM_SST_Bucket/Step_04_run/```.
+__SST_LME_compact__ provides an option for users to quickly reproduce the LME results without preprocessing ICOADS data and pairing adjacent records. To use this function, you can skip step 1 to 2 in the next section and directly run the 3rd step with parameter __do_fast__ equals to 1 and copy the following binned files from ```Data``` folder to ```/Hvd_SST/HM_SST_Bucket/Step_04_run/```.
 
 ````
 BINNED_HM_SST_Bucket_yr_start_1850_deck_level_0_cor_err.mat
@@ -85,7 +85,7 @@ Pooled pairs -- HM_lme_bin.m --> Aggregate pairs -- HM_lme_fit.m --> Offsets est
 
   Users can choose from two different error models in the fitting, one assuming independent and identically distributed pairs, and the other taking into account spatially heterogeneous SST variance and correlations between pairs. This can be tuned by parameter __do_correct__. To compute with the latter model, it requires statistics of SST based on OI-SST, which will be used by ```HM_lme_var_clim.m``` to compute for SST variances. Please download the file from [__here__](https://github.com/duochanatharvard/ICOADS_preprocess) and move it to the ```Miscellaneous``` folder.
 
-  Again, __SST_Homo_compact__ provides an option for users to quickly reproduce the LME results without preprocessing ICOADS data and pairing adjacent records. To use this function, you can skip step 1 to 2 in the next section and directly run the 3rd step with parameter __do_fast__ equals to 1 and copy the following binned files from ```Data``` folder to ```/Hvd_SST/HM_SST_Bucket/Step_04_run/```.
+  Again, __SST_LME_compact__ provides an option for users to quickly reproduce the LME results without preprocessing ICOADS data and pairing adjacent records. To use this function, you can skip step 1 to 2 in the next section and directly run the 3rd step with parameter __do_fast__ equals to 1 and copy the following binned files from ```Data``` folder to ```/Hvd_SST/HM_SST_Bucket/Step_04_run/```.
 
   ````
   BINNED_HM_SST_Bucket_yr_start_1850_deck_level_0_cor_err.mat

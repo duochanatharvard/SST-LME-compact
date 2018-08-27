@@ -46,7 +46,7 @@ __Note__: You may also need ```m_map``` toolbox to reproduce figures.  You can g
 ----
 ## __Steps for LME based inter-comparison__
 
-1. __Preprocessing__: Full analyses start from pre-processing ICOADS data from IMMA format to mat files and perform quality controls. Details of these steps can be found in [__ ICOADS_preprocess__](https://github.com/duochanatharvard/ICOADS_preprocess) project.
+1. __Preprocessing__: Full analyses start from pre-processing ICOADS data from IMMA format to mat files and perform quality controls. Details of these steps can be found in [__ICOADS_preprocess__](https://github.com/duochanatharvard/ICOADS_preprocess) project.
 
 <!--- To skip this step, please download the preprocessed data from  [__here__](https://github.com/duochanatharvard/ICOADS_preprocess).
 --->

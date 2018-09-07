@@ -268,6 +268,9 @@ function [BINNED,W_X,Stats] = HM_lme_bin(varname,method,do_NpD,yr_start,do_refit
         group_region = group_region(l);      %*
         group_season = group_season(l);      %*
         var_obs  = var_obs(l);               %*
+        var_rnd  = var_rnd(l);               %*
+        var_ship = var_ship(l);              %*
+        var_clim = var_clim(l);              %*
         weight   = weight(l);                %*
         data_cmp = data_cmp(l);              %*
     end
